@@ -16,19 +16,14 @@ nvm alias default 22.9.0
 sudo apt update
 sudo apt install git
 ```
-**3. Install Screen**
-```
-sudo apt update
-sudo apt install screen
-```
-**4.Check the installation:**
+**3.Check the installation:**
 ```
 node -v
 npm -v
 ```
 You must use Node version 15 or higher
 
-**5.Install dependencies:**
+**4.Install dependencies:**
 ```
 npm install @solana/web3.js bs58 chalk@4
 ```
@@ -38,13 +33,13 @@ npm install @solana/web3.js bs58 chalk@4
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/cjmahdi2/Sonic_Odyssey_Bot.git
+   git clone https://github.com/cjmahdi2/Solana-wallet-generator.git
    ```
 
 2. Navigate into the project directory:
 
    ```bash
-   cd Sonic_Odyssey_Bot
+   cd Solana-wallet-generator
    ```
 
 3. Install dependencies:
@@ -55,49 +50,11 @@ npm install @solana/web3.js bs58 chalk@4
    yarn install
    ```
 
-4. Prepare input files:
-
-   - Create `nano privateKeys.json` with an array of private keys (base58 encoded).
-
-
-   Example `privateKeys.json`:
-   ```json
-   [
-     "private_key_1",
-     "private_key_2",
-     "private_key_3"
-   ]
-   ```
-After completing the privateKeys.json file, press Ctrl + x and then Ctrl + y and then Enter to save.
-
-## Usage (Manual):
-
-**Creating a Screen:**
-```
-screen -S Sonic_Bot
-```
 Run the bot using Node.js:
 
 ```bash
-npm start && npm run claim
+npm start
 ```
-
-For 100 transactions use: `npm start` And For "Daily Check" and "Climb Box" and "Open box" use: `npm run claim`
-
-Then take Ctrl + A then D to leave the Screen
-
-## Tip (Auto):
-If you want to set up your Bot to run every day at 2:00 AM server time:
-
-1. Edit the Cron File:
-```
-crontab -e
-```
-2. Add the following line to the crontab file:
-```
-0 2 * * * cd /root/Sonic_Odyssey_Bot && node index.js && node claim.js
-```
-After completing the Cron File, press Ctrl + x and then Ctrl + y and then Enter to save.
 
 ## Donations
 
