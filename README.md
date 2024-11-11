@@ -23,10 +23,6 @@ npm -v
 ```
 You must use Node version 15 or higher
 
-**4.Install dependencies:**
-```
-npm install @solana/web3.js bs58 chalk@4
-```
 
 ## Installation Script:
 
